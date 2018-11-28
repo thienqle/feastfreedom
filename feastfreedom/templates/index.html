@@ -9,9 +9,14 @@
         </header>
         <section>
             List of kitchen content
+            {% for kitchen in kitchens %}
+            <p>{{ kitchen.kit_days}}</p>
+            <p><img src="/media/{{kitchen.kit_image }}"/> </p>
+            <p>{{ kitchen.kit_days}}</p>
+            {% endfor %}
         </section>
         <footer>
-            
+            Copyright @ group 1
         </footer>
     </body>
 </html>
