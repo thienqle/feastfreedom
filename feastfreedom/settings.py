@@ -56,7 +56,7 @@ ROOT_URLCONF = 'feastfreedom.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['feastfreedom/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
