@@ -14,10 +14,10 @@ from django.contrib.auth.models import User
 # Create your views here.
 def list_all_kitchen(request):
     kitchens = Kitchen.objects.all()
-    providers = []
-    for kitchen in kitchens:
-        providers.append(kitchen.provider.name)
-    return render(request,'index.html',{'kitchens':kitchens,'providers':provider})
+    #providers = []
+    #for kitchen in kitchens:
+    #    providers.append(kitchen.provider.name)
+    return render(request,'index.html',{'kitchens':kitchens})
 
 def signup(request):
     form = UserForm(request.POST)
