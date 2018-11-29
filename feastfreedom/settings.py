@@ -120,6 +120,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Setting for image displaying
+## Setting for image displaying
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # The folder for MEDIA will be defined here
 MEDIA_URL = '/'
+
+## Configuration for login redirect
+LOGIN_REDIRECT_URL = '/'
