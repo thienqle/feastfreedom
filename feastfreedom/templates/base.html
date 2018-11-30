@@ -18,7 +18,14 @@
             }
 
             .cyan_bg {
-                background-color: #ccccff;
+                background-color: #F4F6F6;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
             }
         </style>
     </head>
@@ -27,16 +34,17 @@
             <div class="cyan_bg mb-5 pb-2 pt-3 border-bottom">
                     <div class="d-flex justify-content-between">
                             <div>
-                                <h2 class="pl-5"><font color="#3333cc">Feastfreedom</font></h2>
+                                <h2 class="pl-5"><font color="#3333cc"><a href="localhost:8000">Feastfreedom</a> </font></h2>
                             </div>
-                            <div class="pr-5">
+                            <div class="mt-2 pr-5">
                                 {% if user.is_authenticated %}
-                                    <h6><a href=''>Login as Provider</a> | <a href='/customer/login'>{{ user.username }}</a></h6>
+                                    <h6 class="pr-5"><a href=''>Login as Provider</a> | {{ user.first_name }} <a href='/customer/logout'>(logout)</a> </h6>
                                 {% endif %}
                                 {% if not user.is_authenticated %}
-                                    <h6><a href=''>Login as Provider</a> | <a href='/customer/login'>Login as User</a></h6>
+                                    <h6 class="pr-5"><a href=''>Login as Provider</a> | <a href='/customer/login'>Login as User</a></h6>
                                 {% endif %}
                             </div>
+                            
                        </div>
             </div>
         </header>
@@ -45,6 +53,7 @@
                     {% block content %}
                     {% endblock %}
             </div>
+            
         </section>
         <br/>
         <footer class="footer">
