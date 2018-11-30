@@ -21,9 +21,10 @@ from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',include('regular_user.urls')),
     path('provider/',include('service_provider.urls')),
     path('customer/',include('regular_user.urls')),
-    path('',include('regular_user.urls'))
+    path('cart/',include('cart.urls'))
 ]
 
 # This is for displaying image

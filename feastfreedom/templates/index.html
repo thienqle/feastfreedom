@@ -5,7 +5,7 @@
                     {% for kitchen in kitchens %}
                     <div class="col margin_card">
                         <div class="card" style="width: 14rem;">
-                                <img class="card-img-top item_image" src="/media/{{kitchen.kit_image }}" alt="Card image cap">
+                                <a href="/provider/{{kitchen.provider_id.id}}"><img class="card-img-top item_image" src="/media/{{kitchen.kit_image }}" alt="Card image cap"></a>
                                 <div class="card-body">
                                 <p class="card-text text-center">{{kitchen.provider_id.name}}</p> <!-- Access foriegn key data on other table -->
                                 </div>

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div><h6>Review your order</h6></div>
+    <table class="table">
+    {% for dish in dishes %}
+        <tr>
+            <td>{{dish.item_name}}</td>
+            {% if dish.veg %}
+            <td>Veg</td>
+            {% endif %}
+            {% if not dish.veg %}
+            <td>Non-Veg</td>
+            {% endif %}
+            <td>${{dish.price}}</td>
+            <td><a class="btn btn-danger" href="/cart/remove/{{dish.id}}">Delete</a></td>
+        </tr>
+    {% endfor %}
+        <tr>
+            <td></td>
+            <td><h6>Total</h6></td>
+            <td><h6>{{total}}</h6></td>
+            <td></td>
+        </tr>
+    </table>
+    <div><a class="btn btn-primary">Place your order</a></div>
+</form>
+</div>
+{% endblock %}  

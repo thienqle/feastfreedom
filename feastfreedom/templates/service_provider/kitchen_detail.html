@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <form method="post" action="/cart/">{% csrf_token %}    <!-- Put splash before cart to get origin route (without adding to current route) -->
+    <table class="table">
+    {% for dish in dishes %}
+        <tr>
+            <td>{{dish.item_name}}</td>
+            {% if dish.veg %}
+            <td>Veg</td>
+            {% endif %}
+            {% if not dish.veg %}
+            <td>Non-Veg</td>
+            {% endif %}
+            <td>${{dish.price}}</td>
+            <td><label><input type="checkbox" name="items" value="{{dish.id}}"> <span class="pl-2">Add to cart</span></label></td>
+        </tr>
+    {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"><button class="btn btn-primary" type="submit">&nbsp &nbsp Add &nbsp &nbsp</button></td>
+        </tr>
+    </table>
+
+</form>
+</div>
+{% endblock %}  

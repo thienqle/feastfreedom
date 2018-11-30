@@ -13,8 +13,13 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 def list_all_kitchen(request):
+    quantity = 0
+    if not 'old_dishes' in request.session or not request.session['old_dishes']:
+        quanity = 0
+    else:
+        quantity = len(request.session['old_dishes'])
     kitchens = Kitchen.objects.all()
-    return render(request,'index.html',{'kitchens':kitchens})
+    return render(request,'index.html',{'kitchens':kitchens,'quantity':quantity})
 
 def signup(request):
     form = UserForm(request.POST)
@@ -36,20 +41,9 @@ def signup(request):
     else:
         new_user_form = UserForm()
         return render(request,'regular_user/signup_form.html',{'form':new_user_form})   # variable always name form
+
     return render(request,'index.html',{})
 
-'''
-def login(request):
-    form = UserLoginForm(request.POST)
-    if form.is_valid():
-        users = RegularUser.objects.get(email=form.cleaned_data['email'])
-        if users.password == form.cleaned_data['password']:
-            return HttpResponse("Login sucessfully!")
-    else:
-        login_form = UserLoginForm()
-        return render(request,'regular_user/login_form.html',{'form':login_form})
-    return render(request,'index.html',{'name':name})
-'''
 
 def log_out(request):
     logout(request)

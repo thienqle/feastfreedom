@@ -18,7 +18,7 @@
             }
 
             .cyan_bg {
-                background-color: #F4F6F6;
+                background-color: rgb(253, 253, 253);
             }
 
             .footer {
@@ -27,21 +27,33 @@
                 width: 100%;
                 text-align: center;
             }
+
+            #div {
+            #    border-style: dotted;
+            #    border-width: 1px;
+            #}
         </style>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="cyan_bg mb-5 pb-2 pt-3 border-bottom">
                     <div class="d-flex justify-content-between">
                             <div>
-                                <h2 class="pl-5"><font color="#3333cc"><a href="localhost:8000">Feastfreedom</a> </font></h2>
+                                <h2 class="pl-5"><font color="#3333cc"><a href="/">Feastfreedom</a> </font></h2>
                             </div>
                             <div class="mt-2 pr-5">
+                                <h6 class="pr-5"><a href=''>Login as Provider &nbsp &nbsp &nbsp &nbsp</a>
                                 {% if user.is_authenticated %}
-                                    <h6 class="pr-5"><a href=''>Login as Provider</a> | {{ user.first_name }} <a href='/customer/logout'>(logout)</a> </h6>
+                                    {% if quantity > 0 %}
+                                       Dishes<span class="badge badge-pill badge-danger">{{quantity}}</span>
+                                    {% endif %}
+                                    &nbsp &nbsp {{ user.first_name }} <a href='/customer/logout'>(logout)</a> </h6>
                                 {% endif %}
                                 {% if not user.is_authenticated %}
-                                    <h6 class="pr-5"><a href=''>Login as Provider</a> | <a href='/customer/login'>Login as User</a></h6>
+                                    {% if quantity > 0 %}
+                                    Dishes <span class="badge badge-pill badge-danger">{{quantity}}</span>
+                                    {% endif %}
+                                    <a href='/customer/login'>Login as User</a></h6>
                                 {% endif %}
                             </div>
                             
