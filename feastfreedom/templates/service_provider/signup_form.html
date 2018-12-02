@@ -6,6 +6,9 @@
         <div class="alert alert-success text-left">You are already logged in</div>
     {% endif %}
     {% if not user.is_authenticated %}
+    {% if message_password %}
+        <div class="alert alert-danger" role="alert">{{message_password}}</div>
+    {% endif %}
     <h6 class="text-center">Provider Registration</h6>
         <br/>
     <form method="post">

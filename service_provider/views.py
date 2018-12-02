@@ -39,6 +39,14 @@ def signup(request):
         if User.objects.filter(username=form.cleaned_data['username']).exists():
             message = "User name is already exist."
             return render(request, 'service_provider/signup_form.html', {'form': ProviderForm(), "message": message})
+
+        if form.cleaned_data.get('password')!=form.cleaned_data.get('confirm_password'):
+            message_password = "Password does not match!"
+            new_form = ProviderForm(initial={'username': form.cleaned_data.get('username'),
+                                             'email': form.cleaned_data.get('email')
+                                             })
+            return render(request, 'service_provider/signup_form.html', {'form': new_form,'message_password':message_password})  # variable always name form
+
         user = User()
         user.username = form.cleaned_data.get('username')
         user.email = form.cleaned_data['email'];
@@ -153,6 +161,16 @@ def signup_kitchen_n(request,id):
         kitchen.start_time = form.cleaned_data['start_time']
         kitchen.end_time = form.cleaned_data['end_time']
         kitchen.kit_image = form.cleaned_data['image']
+        new_form = KitchenForm(initial={'mon': form.cleaned_data.get('mon'),
+                                         'tue': form.cleaned_data.get('tue'),
+                                         'wed': form.cleaned_data.get('wed'),
+                                         'thu': form.cleaned_data.get('thu'),
+                                         'fri': form.cleaned_data.get('fri'),
+                                         'sat': form.cleaned_data.get('sat'),
+                                         'sun': form.cleaned_data.get('sun'),
+                                         'start_time': form.cleaned_data.get('start_time'),
+                                         'end_time': form.cleaned_data.get('end_time')
+                                         })
 
     menusFormset = formset_factory(MenuForm,extra=int(id)+1)
     menus = menusFormset()

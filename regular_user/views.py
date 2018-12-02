@@ -10,7 +10,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
 
-
 # Create your views here.
 def list_all_kitchen(request):
     quantity = 0
