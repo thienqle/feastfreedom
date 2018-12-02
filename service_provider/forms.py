@@ -50,7 +50,7 @@ class KitchenForm(forms.Form):
 
 class MenuForm(forms.Form):
     item_name = forms.CharField(max_length=100)
-    veg = forms.BooleanField()
+    veg = forms.BooleanField(required=False)
     price = forms.DecimalField()
 
 

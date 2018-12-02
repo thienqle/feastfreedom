@@ -3,22 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="ce7927c0-1313-4001-a4bb-d87207a15d80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feastfreedom/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/feastfreedom/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feastfreedom/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/feastfreedom/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feastfreedom/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/feastfreedom/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feastfreedom/templates/regular_user/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/feastfreedom/templates/regular_user/login_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feastfreedom/templates/regular_user/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/feastfreedom/templates/regular_user/signup_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feastfreedom/templates/service_provider/kitchen_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/feastfreedom/templates/service_provider/kitchen_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_user/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_user/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service_provider/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_provider/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service_provider/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_provider/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/appetite-beef-big-bread-161674.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/background-berries-blueberries-1092730.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_0IVnHRY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_3EFg2zg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_8pe3F9e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_MiZP1fA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_No39Qd3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_YWBSPdv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_g7wVDdx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_kAX0bsg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_sGYRkPv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_tULj0Td.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/berry-black-and-white-black-and-white-1586530_vgsmn7v.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/blur-buns-burger-161519.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/vegetables-italian-pizza-restaurant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/vegetables-italian-pizza-restaurant_tsp18p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service_provider/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_provider/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service_provider/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_provider/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,13 +44,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="30" />
-          <entry key="py" value="36" />
+          <entry key="py" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="30" />
-          <entry key="Python" value="36" />
+          <entry key="Python" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/feastfreedom/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -83,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service_provider/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="68" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -96,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/feastfreedom/templates/regular_user/signup_form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -105,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/regular_user/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <marker date="1543767520916" expanded="true" signature="468:469" ph="..." />
@@ -114,14 +117,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service_provider/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="91" column="44" lean-forward="true" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <marker date="1543781491178" expanded="true" signature="2221:2222" ph="..." />
+                <marker date="1543783381540" expanded="true" signature="2221:2222" ph="..." />
               </folding>
             </state>
           </provider>
@@ -131,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/feastfreedom/templates/cart/cart.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -140,16 +143,16 @@
         <entry file="file://$PROJECT_DIR$/feastfreedom/templates/service_provider/kitchen_detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feastfreedom/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -158,10 +161,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feastfreedom/templates/cart/checkout.html">
+        <entry file="file://$PROJECT_DIR$/service_provider/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+            <state relative-caret-position="631">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feastfreedom/templates/service_provider/signup_kitchen_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+            <state relative-caret-position="473">
+              <caret line="91" column="127" selection-start-line="91" selection-start-column="119" selection-end-line="91" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -210,9 +216,9 @@
         <option value="$PROJECT_DIR$/service_provider/models.py" />
         <option value="$PROJECT_DIR$/feastfreedom/templates/base.html" />
         <option value="$PROJECT_DIR$/regular_user/views.py" />
-        <option value="$PROJECT_DIR$/service_provider/forms.py" />
         <option value="$PROJECT_DIR$/service_provider/urls.py" />
         <option value="$PROJECT_DIR$/feastfreedom/templates/service_provider/signup_kitchen_form.html" />
+        <option value="$PROJECT_DIR$/service_provider/forms.py" />
         <option value="$PROJECT_DIR$/service_provider/views.py" />
       </list>
     </option>
@@ -246,13 +252,6 @@
               <item name="Group1_project" type="462c0819:PsiDirectoryNode" />
               <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Group1_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group1_project" type="462c0819:PsiDirectoryNode" />
-              <item name="feastfreedom" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Group1_project" type="b2602c69:ProjectViewProjectNode" />
@@ -325,7 +324,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865228" visible="true" weight="0.24968314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865228" visible="true" weight="0.25031686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5013477" side_tool="true" weight="0.24968314" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -446,16 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service_provider/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service_provider/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -473,13 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feastfreedom/templates/service_provider/signup_kitchen_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feastfreedom/templates/cart/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -490,21 +472,21 @@
     <entry file="file://$PROJECT_DIR$/feastfreedom/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feastfreedom/templates/cart/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/regular_user/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
             <marker date="1543767520916" expanded="true" signature="468:469" ph="..." />
@@ -512,47 +494,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service_provider/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feastfreedom/templates/regular_user/signup_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service_provider/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <marker date="1543781491178" expanded="true" signature="2221:2222" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feastfreedom/templates/service_provider/kitchen_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feastfreedom/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service_provider/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service_provider/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feastfreedom/templates/service_provider/signup_kitchen_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="91" column="127" selection-start-line="91" selection-start-column="119" selection-end-line="91" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feastfreedom/templates/regular_user/signup_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service_provider/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="91" column="44" lean-forward="true" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <marker date="1543783381540" expanded="true" signature="2221:2222" ph="..." />
           </folding>
         </state>
       </provider>

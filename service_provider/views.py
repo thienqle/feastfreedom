@@ -114,7 +114,7 @@ def submit_kitchen(request):
         #return render(request, 'service_provider/signup_kitchen_form.html', {'form': new_form,'menus':menus,'role':type})  # variable always name form
         return redirect('signup_kitchen', id=len(menus))
 
-    return render(request, 'index.html', {})
+    return redirect('index')
 
 def signup_kitchen_n(request,id):
     form = KitchenForm(request.POST,request.FILES)
