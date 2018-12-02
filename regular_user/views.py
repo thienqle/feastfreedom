@@ -14,10 +14,10 @@ from django.contrib.auth.models import User
 # Create your views here.
 def list_all_kitchen(request):
     quantity = 0
-    if not 'old_dishes' in request.session or not request.session['old_dishes']:
+    if not 'dishes' in request.session or not request.session['dishes']:
         quanity = 0
     else:
-        quantity = len(request.session['old_dishes'])
+        quantity = len(request.session['dishes'])
     kitchens = Kitchen.objects.all()
     type = 'customer'
     if request.user.is_authenticated:

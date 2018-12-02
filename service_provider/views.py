@@ -19,10 +19,10 @@ def kitchen_detail(request, id):
     dishes = Menu.objects.filter(kit_id = kitchen)
 
     quantity = 0
-    if not 'old_dishes' in request.session or not request.session['old_dishes']:
+    if not 'dishes' in request.session or not request.session['dishes']:
         quanity = 0
     else:
-        quantity = len(request.session['old_dishes'])
+        quantity = len(request.session['dishes'])
 
     return render(request,'service_provider/kitchen_detail.html',{'kitchen':kitchen,'dishes':dishes,'quantity':quantity})
     #return HttpResponse(dishes)
@@ -114,7 +114,7 @@ def submit_kitchen(request):
         #return render(request, 'service_provider/signup_kitchen_form.html', {'form': new_form,'menus':menus,'role':type})  # variable always name form
         return redirect('signup_kitchen', id=len(menus))
 
-    return redirect('index')
+    return render(request, 'service_provider/signed_up.html',{})  # variable always name form
 
 def signup_kitchen_n(request,id):
     form = KitchenForm(request.POST,request.FILES)
