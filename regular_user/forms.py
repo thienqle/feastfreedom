@@ -3,6 +3,7 @@ from .models import RegularUser
 from django import forms
 
 
+
 #List that is used in the dropdown list
 QUESTION_LISTS = [
     ('Where is your hometown?','Where is your hometown?'),
@@ -10,6 +11,7 @@ QUESTION_LISTS = [
 ]
 
 class UserForm(forms.Form):
+    username = forms.CharField(max_length=100)
     firstName = forms.CharField(max_length=100)
     lastName = forms.CharField(max_length=100)
     email = forms.CharField(max_length=100)
@@ -21,5 +23,6 @@ class UserForm(forms.Form):
 
 
 class UserLoginForm(forms.Form):
-    email = forms.CharField(max_length=100)
-    password = forms.CharField(max_length=32, widget=forms.PasswordInput)
+    username = forms.CharField(max_length=100,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'}))
+    password = forms.CharField(max_length=32,widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}))
+

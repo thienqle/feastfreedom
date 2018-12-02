@@ -8,3 +8,10 @@ class RegularUser(models.Model):
     ans1 = models.TextField(blank=True, null=True)
     ques2 = models.TextField(blank=True, null=True)
     ans2 = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.user_id.username
+
+class UserType(models.Model):
+    user_id = models.ForeignKey(User, null=True, related_name="regular_user", on_delete=models.CASCADE)     # cannot use same related_name
+    role = models.TextField(blank=True, null=True)

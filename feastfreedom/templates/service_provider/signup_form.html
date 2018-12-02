@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container w-50">
+<div class="container w-25">
     {% if user.is_authenticated %}
         <div class="alert alert-success text-left">You are already logged in</div>
     {% endif %}
     {% if not user.is_authenticated %}
-    <h6 class="text-center">User Registration</h6>
+    <h6 class="text-center">Provider Registration</h6>
         <br/>
     <form method="post">
       {%csrf_token%}
@@ -25,10 +25,8 @@
                              </div>
                     {% endfor %}
                     <div class = "row mt-4 pt-2">
-                        <div class="col"></div>
-                        <div class="col">
-                        <button class="btn btn-primary" type="submit" class='save button'>Signup</button>
-                    </div>
+                        <div class="col"><a class="btn btn-warning btn-block" href="/">Cancel</a></div>
+                        <div class="col"><button class="btn btn-primary btn-block" type="submit" class='save button'>Next</button></div>
                     </div>
                     </div>
     </form></div>

@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
+    <div class="mb-3">
+        <h5>{{ kitchen.provider_id.name }}</h5>
+        <p>Opening hours: {{ kitchen.kit_days }}</p>
+        <p> {{ kitchen.start_time }} - {{ kitchen.end_time }}</p>
+    </div>
+    <h5>Menu</h5>
     <form method="post" action="/cart/">{% csrf_token %}    <!-- Put splash before cart to get origin route (without adding to current route) -->
     <table class="table">
     {% for dish in dishes %}

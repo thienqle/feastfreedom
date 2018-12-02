@@ -8,12 +8,12 @@
         <div class="alert alert-success text-left">You are already logged in</div>
     {% endif %}
     {% if not user.is_authenticated %}
-  <div class="mb-5"><h5>Login as Regular User</h5></div>
+  <div class="mb-5"><h5>Service Provider Registration</h5></div>
   <br/>
 
   <div class="row">
     <div class="col border-right">
-      <p>Login to your account</p>
+      <p>Login to your service provider account</p>
     <form class="ml-5 pl-5 mr-5 pr-5" method="post">
       {%csrf_token%}
                     <div class="table">
@@ -43,7 +43,7 @@
     </form>
     </div>
     <div class="col border-left">
-      <p>New user? Click to register</p>
+      <p>New service provider? Click to register</p>
       <p><a class="btn btn-primary" href="signup">Register</a></p>
     </div>
   </div>

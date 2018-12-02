@@ -43,9 +43,16 @@ def delete_item(request,id):
     if not 'old_dishes' in request.session or not request.session['old_dishes']:
         return redirect('cart')
     else:
-        print(id)
-        print(request.session['old_dishes'])
         #if id in request.session['old_dishes']:
         request.session['old_dishes'].remove(int(id))
-        print(request.session['old_dishes'])
     return redirect('cart')
+
+def place_order(request):
+    if request.user:
+        if request.user.is_authenticated:
+            del request.session['old_dishes']
+            return render(request,'cart/checkout.html',{})
+        else:
+            return redirect('login')
+    else:
+        return redirect('login')

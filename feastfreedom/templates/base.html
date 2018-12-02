@@ -22,7 +22,7 @@
             }
 
             .footer {
-                position: fixed;
+                position: sticky;
                 bottom: 0;
                 width: 100%;
                 text-align: center;
@@ -42,16 +42,27 @@
                                 <h2 class="pl-5"><font color="#3333cc"><a href="/">Feastfreedom</a> </font></h2>
                             </div>
                             <div class="mt-2 pr-5">
-                                <h6 class="pr-5"><a href=''>Login as Provider &nbsp &nbsp &nbsp &nbsp</a>
-                                {% if user.is_authenticated %}
+                                {% if user.is_authenticated and userType %}
+                                    {% if userType == 'customer'%}
+                                    <h6 class="pr-5"><a href='/provider/login'>Login as Provider</a>  &nbsp &nbsp &nbsp &nbsp
+                                        {% if quantity > 0 %}
+                                            <a href="/cart/">Dishes<span class="badge badge-pill badge-danger">{{quantity}}</span></a>
+                                        {% endif %}
+                                        &nbsp &nbsp {{ user.username }} <a href='/customer/logout'>(logout)</a> </h6>
+                                       {% endif %}
+                                     {% if userType == 'provider'%}
+                                <h6 class="pr-5"><a href='/provider/login'>Login as Customer</a>  &nbsp &nbsp &nbsp &nbsp
                                     {% if quantity > 0 %}
-                                       Dishes<span class="badge badge-pill badge-danger">{{quantity}}</span>
+                                    <a href="/cart/">Dishes<span class="badge badge-pill badge-danger">{{quantity}}</span></a>
                                     {% endif %}
-                                    &nbsp &nbsp {{ user.first_name }} <a href='/customer/logout'>(logout)</a> </h6>
+                                    &nbsp &nbsp {{ user.username }} <a href='/customer/logout'>(logout)</a> </h6>
+                                    {% endif %}
                                 {% endif %}
+
                                 {% if not user.is_authenticated %}
+                                    <a href='/provider/login'>Login as Provider</a></h6>&nbsp &nbsp &nbsp &nbsp
                                     {% if quantity > 0 %}
-                                    Dishes <span class="badge badge-pill badge-danger">{{quantity}}</span>
+                                    <a href="/cart/">Dishes<span class="badge badge-pill badge-danger">{{quantity}}</span></a>
                                     {% endif %}
                                     <a href='/customer/login'>Login as User</a></h6>
                                 {% endif %}
@@ -61,10 +72,10 @@
             </div>
         </header>
         <section>
-            <div class="container">
-                    {% block content %}
-                    {% endblock %}
-            </div>
+            {% block content %}
+
+
+            {% endblock %}
             
         </section>
         <br/>

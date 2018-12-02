@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container w-30">
+    {{ form.name.errors }}
+    {% if user.is_authenticated%}
+        {% if role == 'customer' %}
+        <div class="alert alert-success text-left">You are not provider</div>
+        {% endif %}
+        {% if role == 'provider' %}
+    <h6 class="text-center">Kitchen Registration</h6>
+        <br/>
+    <form method="post" id='kitchen_form' enctype="multipart/form-data">
+      {%csrf_token%}{{ menus.management_form}}
+      <div class="table">
+                    <div class = "row">
+                        <div class = "col mb-2"><b>Workdays</b></div>
+                        <div class = "col mb-2">Monday</div>
+                        <div class = "col mb-2">{{form.mon}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Tuesday</div>
+                        <div class = "col mb-2">{{form.tue}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Wednesday</div>
+                        <div class = "col mb-2">{{form.wed}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Thursday</div>
+                        <div class = "col mb-2">{{form.thu}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Thursday</div>
+                        <div class = "col mb-2">{{form.fri}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Saturday</div>
+                        <div class = "col mb-2">{{form.sat}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Sunday</div>
+                        <div class = "col mb-2">{{form.sun}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"><b>Work hours</b></div>
+                        <div class = "col mb-2">Start time </div>
+                        <div class = "col mb-2">{{form.start_time}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">End time </div>
+                        <div class = "col mb-2">{{form.end_time}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Image </div>
+                        <div class = "col mb-2">{{form.image}}</div>
+                    </div>
+                    <hr/>
+                    {%for menu in menus%}
+                        <div class = "row">
+                        <div class = "col mb-2"><b>Menu</b></div>
+                        <div class = "col mb-2">Dish Name</div>
+                        <div class = "col mb-2">{{menu.item_name}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Veg </div>
+                        <div class = "col mb-2">{{menu.veg}}</div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2">Price </div>
+                        <div class = "col mb-2">{{menu.price}}</div>
+                    </div>
+                    {% endfor %}
+                    <div class = "row">
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2"></div>
+                        <div class = "col mb-2"><button class="btn btn-success btn-block" formaction="/provider/signupnext/{{menus|length }}" type="submit">Add menu</button></div>
+                    </div>
+                    <hr/>
+                    <div class = "row mt-4 pt-2">
+                        <div class="col"><a class="btn btn-warning btn-block" href="/">Cancel</a></div>
+                        <div class="col"><button class="btn btn-primary btn-block" type="submit" formaction="/provider/signedup" class='save button'>Next</button></div>
+                    </div>
+
+            </div>
+    </div>
+    {% endif %}
+    {% endif %}
+{% endblock %}
