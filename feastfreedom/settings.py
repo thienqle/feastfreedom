@@ -127,3 +127,9 @@ MEDIA_URL = '/'
 
 ## Configuration for login redirect
 LOGIN_REDIRECT_URL = '/'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'project510.summit@gmail.com'
+EMAIL_HOST_PASSWORD = 'summit1234'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

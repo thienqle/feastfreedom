@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from service_provider.models import Kitchen,Provider,Menu
+from django.core.mail import send_mail
 
 # Create your views here.
 def cart(request):
@@ -39,7 +40,27 @@ def delete_item(request,id):
 def place_order(request):
     if request.user:
         if request.user.is_authenticated:
+            email_user = [request.user.email]
+            email_prodvider = []
+
+            for index in request.session['dishes']:
+                dish = Menu.objects.get(id=index)
+                email_prodvider.append(dish.kit_id.provider_id.user_id.email)
+
             del request.session['dishes']
-            return render(request,'cart/checkout.html',{})
+
+            print(email_prodvider)
+            send_mail('Order Confirmation form Feastfreedom',
+                      'Thanks for making an order.',
+                      'project510.summit@gmail.com',
+                      email_user,
+                      fail_silently=False,)
+            send_mail('Order Confirmation form Feastfreedom',
+                      'Your have a order from {}.'.format(email_user[0]),
+                      'project510.summit@gmail.com',
+                      email_prodvider,
+                      fail_silently = False,)
+
+        return render(request,'cart/checkout.html',{})
 
     return redirect('login')

@@ -46,6 +46,7 @@ def signup(request):
         new_user.ans1 = form.cleaned_data['answer1']
         new_user.ques2 = form.cleaned_data['secret_quesion2']
         new_user.ans2 = form.cleaned_data['answer1']
+        new_user.save()
         user_type = UserType()
         user_type.user_id = user
         user_type.role = 'customer'
